@@ -1,4 +1,4 @@
-package InsertionSort;
+package insertionsort;
 
 import common.ArrayUtils;
 
@@ -8,11 +8,19 @@ public class InsertionSort {
 		int[] arr = ArrayUtils.generateArr(10);
 		ArrayUtils.printArr(arr);
 		System.out.println();
-		InsertSort(arr);
+		insertionSort(arr);
 		ArrayUtils.printArr(arr);
 	}
 
-	private static void InsertSort(int[] a) {
+	/**
+	 * 插入排序
+	 * @author 周宁
+	 * @date 2017年3月9日
+	 * @param
+	 * @return
+	 * @throws
+	 */
+	private static void insertionSort(int[] a) {
 		int length = a.length;
 		int i, j, k;
 		for (i = 1; i < length; i++) {
