@@ -1,4 +1,4 @@
-package insertionsort;
+package insertsort;
 
 import common.ArrayUtils;
 
