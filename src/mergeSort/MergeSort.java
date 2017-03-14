@@ -25,7 +25,7 @@ public class MergeSort {
 	}
 	
 	public static void merge(int[] arr, int low, int mid, int high) {  
-        int[] temp = new int[high - low + 1];  
+        int[] temp = new int[high - low + 1];//临时数组
         int i = low;// 左指针  
         int j = mid + 1;// 右指针  
         int k = 0;
