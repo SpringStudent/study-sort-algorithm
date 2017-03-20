@@ -36,7 +36,7 @@ public class SelectSort {
 	}
 	
 	/**
-	 * 使用位运算交换两个元素
+	 * 交换两个元素
 	 * @author 周宁
 	 * @date 2017年3月9日
 	 * @param a

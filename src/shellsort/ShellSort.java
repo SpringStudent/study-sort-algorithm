@@ -26,20 +26,16 @@ public class ShellSort {
 		int length = arr.length;
 		int gap = length / 2;
 		while (gap >= 1) {
-			for (int i = 0; i < gap; i++) {
-				for (int j = i + gap; j < length; j = j + gap) {
-					if (arr[j] < arr[j - gap]) {
-						int temp = arr[j];
-						int k = j - gap;
-						while (k >= 0 && arr[k] > temp) {
-							arr[k + gap] = arr[k];
-							k -= gap;
-						}
-						arr[k + gap] = temp;
-					}
+			for(int i = gap;i<length;i++){
+				int temp = arr[i];
+				int j =0;
+				for(j =i-gap;j>=0&& temp < arr[j];j = j-gap){
+					arr[j + gap] = arr[j];
 				}
+				arr[j+gap] = temp;
+				
 			}
-			gap = gap / 2;
+			gap = gap/2;
 		}
 	}
 }
