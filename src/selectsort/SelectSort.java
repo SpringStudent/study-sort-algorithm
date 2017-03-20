@@ -13,7 +13,7 @@ public class SelectSort {
 	}
 
 	/**
-	 * 选择排序
+	 * 每次从n-i+1个元素中选择关键字最小的元素作为有序序列的第i个元素
 	 * @author 周宁
 	 * @date 2017年3月9日
 	 * @param arr
